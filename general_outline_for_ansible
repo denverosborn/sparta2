@@ -1,0 +1,9 @@
+podman pull registry image (have registry image on util container )
+podman save registry image (have registry image on util container )
+send registry image to remote host
+poman load --input image.tar
+generate cert
+(run container with ssl cert) podman run -d -it -p 5000:5000 --name registry registry:2
+make registry insecure (/etc/containers/registries.conf)
+
+oc mirror --config=./imageset-config.yaml docker://10.15.69.148:5000
