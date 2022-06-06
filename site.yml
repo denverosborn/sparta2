@@ -1,0 +1,11 @@
+---
+- name: ansible roles
+  hosts: all
+  tasks:
+    - name: Mirror registry
+      include_role: registry
+      when: ('remote') in group_names
+
+    - name: OCP install config
+      include_role: ocp-install-build-config
+      when: ('local') in group_names
