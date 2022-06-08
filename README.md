@@ -6,15 +6,17 @@ Once the sparta-utiltiy.tar.gz and the ocp-images.tar have been moved to the air
 - Podman
 
 ### Unpack tar files
-Step 1: `sudo mkdir -p /root/utility`\
+Step 1: `sudo mkdir -p /root/utility`
 
-Step 2: `tar xvf sparta-utility.tar.gz -C /root/utility` \
+Step 2: `sudo tar xvf sparta-utility.tar.gz -C /root/utility`
 
-Step 3: This script creates an SSH keypair and adds the public to the `authorized_keys` file of the host. \
+Step 3: This script creates an SSH keypair and adds the public to the `authorized_keys` file of the host.
+
 `cd /root/utility/ && bash ssh-keys.sh`
 
-Step 4: load the utility container onto the localhost \
+Step 4: load the utility container onto the localhost
+
 `sudo podman load -i /root/utility/tar-bundles/utility.tar`
 
-Step 5: 
+Step 5:
 ## site.yml
