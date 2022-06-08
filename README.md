@@ -12,7 +12,7 @@ Step 2: `sudo tar xvf sparta-utility.tar.gz -C /root/utility`
 
 Step 3: This script creates an SSH keypair and adds the public to the `authorized_keys` file of the host.
 
-`cd /root/utility/ && bash ssh-keys.sh`
+`cd /root/utility/sparta2 && bash ssh-keys.sh`
 
 Step 4: load the utility container onto the localhost
 

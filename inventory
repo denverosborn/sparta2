@@ -1,5 +1,12 @@
 [remote]
+<<<<<<< HEAD
 10.15.69.148 ansible_ssh_private_key_file=/root/.ssh/utility
 
 [local]
 localhost ansible_connection=local
+=======
+IPADDRR   ansible_ssh_private_key_file=/root/.ssh/utility
+
+[local]
+localhost  ansible_connection=local
+>>>>>>> 0e16a37301a06423cdd3b1c05bd48ad96d10aafd
