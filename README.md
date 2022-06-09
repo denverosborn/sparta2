@@ -26,4 +26,15 @@ Step 5: load the utility container onto the localhost
 
 `sudo podman load -i /root/utility/tar-bundles/utility.tar`
 
-Step 6: 
+Step 6: Modify the ansible inventory by changing IPADDR to the localhost IP
+
+`vi /root/utility/sparta2/inventory`
+
+Step 7: Modify vars to setup the mirror-registry
+
+`vi /root/utility/sparta2/vars/registry.yml`
+
+Step 8: Run ansible playbooks
+- mirror-registry.yml
+- oc-mirror.yml
+- ocp-build-config.yml
