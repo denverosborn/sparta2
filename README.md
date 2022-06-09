@@ -6,17 +6,24 @@ Once the sparta-utiltiy.tar.gz and the ocp-images.tar have been moved to the air
 - Podman
 
 ### Unpack tar files
-Step 1: `sudo mkdir -p /root/utility`
+Step 1: Create the utility directory. Mirror-registry requires root privileges to run.  
 
-Step 2: `sudo tar xvf sparta-utility.tar.gz -C /root/utility`
+`sudo mkdir -p /root/utility`
 
-Step 3: This script creates an SSH keypair and adds the public to the `authorized_keys` file of the host.
+Step 2: unpack the packages to the utility directory
+
+`sudo tar xvf sparta-utility.tar.gz -C /root/utility`
+
+Step 3: Move the ocp-images.tar to the utility directory
+
+`sudo mv ocp-images.tar /root/utility`
+
+Step 5: This script creates an SSH keypair and adds the public to the `authorized_keys` file of the host.
 
 `cd /root/utility/sparta2 && bash ssh-keys.sh`
 
-Step 4: load the utility container onto the localhost
+Step 5: load the utility container onto the localhost
 
 `sudo podman load -i /root/utility/tar-bundles/utility.tar`
 
-Step 5:
-## site.yml
+Step 6: 

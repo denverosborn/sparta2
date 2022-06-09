@@ -5,11 +5,6 @@
     - vars/registry.yml
   tasks:
     - name: Mirror registry
-      include_role: 
+      include_role:
         name: registry
       when: ('remote') in group_names
-
-      #    - name: OCP install config
-      #include_role: 
-      #  name: ocp-install-build-config
-      #when: ('local') in group_names
