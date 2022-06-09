@@ -1,0 +1,8 @@
+---
+- name: ansible roles
+  hosts: local
+  vars_files:
+    - vars/registry.yml
+  tasks:
+    - name: populate mirror
+      shell: oc-mirror --from={{ oc_mirror_tar_output }} docker://{{ quay_hostname }}:8443 --dest-skip-tls

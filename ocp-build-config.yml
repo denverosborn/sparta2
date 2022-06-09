@@ -1,0 +1,9 @@
+---
+- name: ansible roles
+  hosts: local
+  vars_files:
+    - vars/registry.yml
+  tasks:
+    - name: OCP install config
+      include_role:
+        name: ocp-install-build-config
