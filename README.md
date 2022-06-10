@@ -37,4 +37,5 @@ Step 7: Modify vars to setup the mirror-registry
 Step 8: Run ansible playbooks
 - mirror-registry.yml
 - oc-mirror.yml
+- cert-dir.yml
 - ocp-build-config.yml
