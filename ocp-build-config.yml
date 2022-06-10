@@ -3,6 +3,7 @@
   hosts: local
   vars_files:
     - vars/registry.yml
+    - vars/ocp-build.yml
   tasks:
     - name: OCP install config
       include_role:

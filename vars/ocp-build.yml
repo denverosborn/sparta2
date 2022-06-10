@@ -1,0 +1,7 @@
+---
+management_hostname: demo1
+cluster_name: example.com
+cluster_domain: example.com
+
+#####Defaults########
+base_dir: /root/utility

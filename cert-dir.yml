@@ -1,0 +1,17 @@
+---
+- name: ansible roles
+  hosts: remote
+  vars_files:
+    - vars/registry.yml
+    - vars/ocp-build.yml
+  tasks:
+    - name: Cert directory for OCP Install Build
+      file:
+        path: '{{ base_dir }}/certs'
+        state: directory
+
+    - name: Copy certificate to the CA anchors folder
+      copy:
+        remote_src: yes
+        src: '{{ cert_directory }}/ssl.cert'
+        dest: '{{ base_dir }}/certs'
