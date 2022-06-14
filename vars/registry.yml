@@ -8,6 +8,6 @@ quay_hostname: localhost
 ##################################################################
 ################Defaults are not required to be changed###########
 json_pull_secret: /root/.docker/config.json
-oc_mirror_tar_output: /root/utility/ocp-images.tar
+oc_mirror_tar_output: /root/utility/output
 controller_mirror_registry_download_dir: /root/utility/tar-bundles/
 cert_directory: /etc/quay/pki
