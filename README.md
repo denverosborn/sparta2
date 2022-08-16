@@ -18,7 +18,7 @@ Step 3: Move the ocp-images.tar to the utility directory
 
 `sudo mv ocp-images.tar /root/utility`
 
-Step 5: This script creates an SSH keypair and adds the public to the `authorized_keys` file of the host.
+Step 4: This script creates an SSH keypair and adds the public to the `authorized_keys` file of the host.
 
 `cd /root/utility/sparta2 && bash ssh-keys.sh`
 
